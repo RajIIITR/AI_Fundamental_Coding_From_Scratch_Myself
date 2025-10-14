@@ -20,7 +20,7 @@ class Graph:
     def is_colorable(self, color_V):
         for ver, neighbors in enumerate(self.graph):
             for neigh in neighbors:
-                if color_V[ver] == color_V[neigh]:   # ❌ same color as neighbor
+                if color_V[ver] == color_V[neigh]:   
                     return False
         return True
         
